@@ -1308,6 +1308,9 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-\[3px\] {
+    border-radius: 3px;
+  }
   .rounded-s {
     border-start-start-radius: 0.25rem;
     border-end-start-radius: 0.25rem;
@@ -1421,6 +1424,9 @@
   }
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
+  }
+  .bg-\[\#1DD1A1\] {
+    background-color: #1DD1A1;
   }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
@@ -1609,8 +1615,14 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .px-\[9px\] {
+    padding-inline: 9px;
+  }
   .px-\[15px\] {
     padding-inline: 15px;
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-\[23px\] {
     padding-block: 23px;
@@ -1656,6 +1668,9 @@
   }
   .align-top {
     vertical-align: top;
+  }
+  .text-\[14px\] {
+    font-size: 14px;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1733,6 +1748,18 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-\[\#343434\] {
+    color: #343434;
+  }
+  .text-red-700 {
+    color: var(--color-red-700);
+  }
+  .text-red-800 {
+    color: var(--color-red-800);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .capitalize {
     text-transform: capitalize;
@@ -2177,6 +2204,32 @@
   .transform-view {
     transform-box: view-box;
   }
+  .\*\:\*\:font-medium {
+    :is(& > *) {
+      :is(& > *) {
+        --tw-font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-medium);
+      }
+    }
+  }
+  .\*\:font-medium {
+    :is(& > *) {
+      --tw-font-weight: var(--font-weight-medium);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+  .\*\*\:font-medium {
+    :is(& *) {
+      --tw-font-weight: var(--font-weight-medium);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
 }
 @keyframes spin {
   to {
@@ -2478,6 +2531,10 @@
   inherits: false;
 }
 @property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
