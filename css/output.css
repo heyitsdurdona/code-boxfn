@@ -737,8 +737,20 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
+  .mb-\[100px\] {
+    margin-bottom: 100px;
+  }
+  .mb-\[17px\] {
+    margin-bottom: 17px;
+  }
+  .mb-\[20px\] {
+    margin-bottom: 20px;
+  }
   .mb-\[22px\] {
     margin-bottom: 22px;
+  }
+  .mb-\[23px\] {
+    margin-bottom: 23px;
   }
   .mb-\[30px\] {
     margin-bottom: 30px;
@@ -746,17 +758,11 @@
   .mb-\[50px\] {
     margin-bottom: 50px;
   }
-  .mb-\[80px\] {
-    margin-bottom: 80px;
-  }
-  .mb-\[100px\] {
-    margin-bottom: 100px;
-  }
-  .mb-\[17px\] {
-    margin-bottom: 17px;
-  }
   .mb-\[66px\] {
     margin-bottom: 66px;
+  }
+  .mb-\[80px\] {
+    margin-bottom: 80px;
   }
   .mb-\[166px\] {
     margin-bottom: 166px;
@@ -1349,6 +1355,9 @@
   .gap-\[50px\] {
     gap: 50px;
   }
+  .gap-\[60px\] {
+    gap: 60px;
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
@@ -1445,6 +1454,9 @@
   }
   .rounded-\[3px\] {
     border-radius: 3px;
+  }
+  .rounded-\[4px\] {
+    border-radius: 4px;
   }
   .rounded-\[6px\] {
     border-radius: 6px;
@@ -1807,11 +1819,17 @@
   .px-\[15px\] {
     padding-inline: 15px;
   }
+  .px-\[42px\] {
+    padding-inline: 42px;
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-\[10px\] {
+    padding-block: 10px;
   }
   .py-\[13px\] {
     padding-block: 13px;
@@ -1830,6 +1848,9 @@
   }
   .pb-\[166px\] {
     padding-bottom: 166px;
+  }
+  .pb-\[206px\] {
+    padding-bottom: 206px;
   }
   .pb-\[214px\] {
     padding-bottom: 214px;
@@ -1888,6 +1909,9 @@
   }
   .text-\[14px\] {
     font-size: 14px;
+  }
+  .text-\[16px\] {
+    font-size: 16px;
   }
   .text-\[20px\] {
     font-size: 20px;
